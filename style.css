@@ -1,7 +1,26 @@
+/* shared style */
 * {
   font-family: "Work Sans", sans-serif;
 }
-    /* Header section */
+.btn-primary {
+  /* width: 180px;
+  height: 64px; */
+  border-radius: 8px;
+background: #FF900E;
+color: white;
+font-size: 1.25rem;
+font-weight: 600;
+padding: 20px 24px;
+cursor: pointer;
+border: 0;
+}
+.btn-primary:hover{
+    background: rgba(10, 10, 10, 0.1);
+    color: #FF900E;
+    transition: 0.3s;
+
+}
+/* Header section */
 header {
   background: rgba(255, 144, 14, 0.1);
   padding: 50px 240px;
@@ -15,12 +34,11 @@ nav {
   font-size: 2.8rem;
   font-weight: 700;
   color: #131313;
-
 }
-.nav-menus{
-    color: #424242;
-    font-weight: 500;
-    font-size: 1.2rem;
+.nav-menus {
+  color: #424242;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 nav ul {
   display: flex;
@@ -34,4 +52,49 @@ nav li {
 nav li a {
   color: #424242;
   text-decoration: none;
+}
+/* banner section */
+.banner-content {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+.banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #131313;
+  margin-bottom: 24px;
+}
+.banner-description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #727272;
+}
+
+.banner img{
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+
+/* responsive media queries */
+/* Mobile Devices */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px ;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}
+/* Tab / Medium Devices */
+@media screen and (min-width: 577px) and (max-width: 960px) {
+    header{
+        padding: 50px ;
+    }
+    nav{
+        flex-direction: column;
+    }   
 }
