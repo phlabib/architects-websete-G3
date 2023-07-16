@@ -1,6 +1,8 @@
 /* shared style */
 * {
   font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 .text-light-gray {
   color: #727272;
@@ -84,6 +86,10 @@ sponsor-title {
 .teams-container {
   display: flex;
   align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .teams-img-container {
   display: grid;
@@ -114,6 +120,10 @@ sponsor-title {
   display: flex;
   margin-top: 130px;
   gap: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  
+  margin-bottom: 100px;
 }
 .features .section-title {
   border-left: 5px solid #ff900e;
@@ -154,6 +164,12 @@ font-size: 1.5rem;
 }
 
 /* facts section */
+.facts{
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .facts-card-con .card {
   border-radius: 8px;
   border: 1px solid #ff900e;
@@ -182,6 +198,10 @@ font-size: 1.5rem;
 /* sponsors section */
 .sponsor-container {
   text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .sponsor-title {
   font-size: 3rem;
@@ -231,8 +251,12 @@ margin-right: 240px;
   .teams-container,
   .facts-card-con,
   .sponsor-img-container,
-  .features {
+  .features,
+  .facts,
+  .sponsor-container {
     flex-direction: column;
+    margin: 0;
+    margin-bottom: 80px;
   }
   .teams-img-container {
     grid-template-columns: 1fr;
@@ -240,16 +264,17 @@ margin-right: 240px;
   .teams-contant,
   .facts-card-con,
   .facts-title-section {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .teams-container,
   .facts{
     text-align: center;
   }
-  .facts-card-con {
+  .facts-card-con,
+  .sponsor-description {
     gap: 20px;
-    margin-top: 36px;
+    margin-top: 26px;
   }
   .feature-img img{
     width: 100%;
@@ -261,8 +286,7 @@ margin-right: 240px;
   }
   .footer-con,
   .footer-description{
-    margin: 0;
-    padding: 0;
+   
     text-align: center;
     flex-direction: column;
   }
